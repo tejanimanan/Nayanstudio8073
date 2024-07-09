@@ -1,0 +1,117 @@
+.custom-bg-color {
+  background-color: #aebe39;
+}
+.back{
+  background-color:#F0F0F4;
+}
+.image-card img {
+  width: 100%;
+  height: 250px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+/* Slider.css */
+
+/* Override Bootstrap carousel transition duration */
+.carousel-item {
+  /* transition: transform 2s ease, opacity 2ms ease;  */
+  transition: transform 0.5s ease-in-out,opacity 0.5s ease;
+  /* Adjust the duration to 2 seconds */
+}
+
+/* Optionally, set the animation duration for a continuous loop effect */
+/* @keyframes carouselSlide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-10%); }
+} */
+
+.carousel-inner {
+  animation: carouselSlide 10s infinite; /* Adjust the duration to 2 seconds */
+}
+.video-border {
+  border: 10px solid rgb(101, 105, 101);
+}
+/* App.css */
+body {
+  background-color: #f8f9fa;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* for slide text */
+.custom-caption {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 35%;
+  transform: translate(-10%, -10%);
+  color: rgb(30, 28, 28);
+  
+  text-shadow: 2px 2px 4px rgba(244, 241, 241, 0.5);
+}
+
+.custom-caption h1 {
+  font-family: 'Comic Sans', serif;  /* You can use any font you prefer */
+  font-size: 4rem;
+  -webkit-text-fill-color: #f2f3ec;
+  font-weight: bold;
+  width: 400px;
+  height: 100px;
+  animation: mymove 4s infinite;
+}
+@keyframes mymove {
+  50% {font: 40px bold;
+        -webkit-text-fill-color: #aebe39;
+        }
+        
+}
+@keyframes picmove {
+  50% {rotate: y 180deg;}
+  
+}
+#mymove :hover{
+  
+  animation: picmove 5s infinite;
+   scale: 1 1;
+}
+ .custom-caption h2 {
+  font-family: 'Brush Script MT', serif;  /* You can use any font you prefer */
+  font-size: 3rem;
+  -webkit-text-fill-color: #dcdccd;
+  font-weight: bold;
+  position: absolute;
+  top: 90%;
+  left: 10%;
+ 
+
+}
+.custom-caption h3 {
+  font-family: 'Comic Sans', sans-serif;  /* You can use any font you prefer */
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+}
+.footer {
+  font-family: 'Brush Script MT', serif;
+  font-size: 1.5rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #131313;
+  color: rgb(239, 231, 231);
+  text-align: center;
+}
+/* for slide text */

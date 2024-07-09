@@ -1,0 +1,42 @@
+/* Navbar.css */
+
+/* General Navbar Styles */
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    font-family: 'Arial', sans-serif; /* You can change the font family as per your preference */
+    font-size: 1.1rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #aebe39;
+    background-color: #3d3b3b;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-item .nav-link-custom {
+    font-family: 'Georgia', serif; /* Another example of a different font family */
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #333;
+    border: none;
+}
+
+.navbar-nav .dropdown-item {
+    color: #fff;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: #aebe39;
+    background-color: #222;
+}
